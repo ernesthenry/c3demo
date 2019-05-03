@@ -11,14 +11,15 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <title>C3ALIVE | HOME</title>
 </head>
 
 <body data-spy="scroll" data-target="#navbarSupportedContent">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg k fixed-top">
         <a class="navbar-brand ml-3" href="index.html"><img src="images/logoc3.png"><span
                 style="color:#00E8E8">ALIVE</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -227,13 +228,45 @@
                     <div class="col text-center">
                         <div class="p-5">
                             <h1 class="display-4">C3 CULTURE</h1>
+                            <div class="col-12 text-center">
+                                <h3 class="heading">We are simple, vibrant, loving and caring</h3>
+                                <div class="heading-underline"></div>
+                            </div>
                             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam
                                 assumenda
                                 eius culpa placeat error soluta maxime tenetur alias molestiae?Lorem ipsum dolor sit
-                                amet consectetur adipisicing elit. Quaerat a alias, nisi optio unde soluta corporis
-                                beatae veritatis, distinctio similique dicta rerum laborum, iusto libero error nesciunt
-                                id vel quas.</p>
-                            <a href="#" class="btn btn-primary btn-md">Find Out More</a>
+                                amet consectetur adipisicing elit. Quaerat a alias, nisi optio unde soluta corpori.</p>
+                            <h2 class="gallery-heading">View Our Gallery</h2>
+                            <div class="gallery">
+                                <a href="gallery/image-15.png" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-15.png" alt=""></a>
+                                <a href="gallery/image-2.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-2.jpg" alt=""></a>
+                                <a href="gallery/image-3.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-3.jpg" alt=""></a>
+                                <a href="gallery/image-4.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-4.jpg" alt=""></a>
+                                <a href="gallery/image-5.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-5.jpg" alt=""></a>
+                                <a href="gallery/image-6.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-6.jpg" alt=""></a>
+                                <a href="gallery/image-8.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-8.jpg" alt=""></a>
+                                <a href="gallery/image-9.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-9.jpg" alt=""></a>
+                                <a href="gallery/image-10.jpg" data-lightbox="mygallery" data-title="Best images"> <img
+                                        src="gallery/image-10.jpg" alt=""></a>
+                                <a href="gallery/image-11.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-11.jpg" alt=""></a>
+                                <a href="gallery/image-12.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-12.jpg" alt=""></a>
+                                <a href="gallery/image-13.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-13.jpg" alt=""></a>
+                                <a href="gallery/image-14.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-14.jpg" alt=""></a>
+                                <a href="gallery/image-16.jpg" data-lightbox="mygallery" data-title="Best images"><img
+                                        src="gallery/image-16.jpg" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -452,6 +485,11 @@
             </div>
         </div>
     </div>
+    <!------Smooth scroll----->
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -464,54 +502,54 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script>
-    window.sr = ScrollReveal();
-    sr.reveal(".navbar", {
-    duration: 2000,
-    origin: 'bottom'
-    });
-    sr.reveal(".showcase-left", {
-    duration: 2000,
-    origin: 'left',
-    distance: '300px'
-    });
-    sr.reveal(".showcase-right", {
-    duration: 2000,
-    origin: 'top',
-    distance: '300px'
-    });
-    sr.reveal(".showcase-btn", {
-    duration: 2000,
-    delay: 2000,
-    origin: 'bottom'
-    });
-    sr.reveal("#exist div", {
-    duration: 2000,
-    origin: 'bottom'
-    });
-    sr.reveal(".section-1 ", {
-    duration: 2000,
-    distance: '300px',
-    origin: 'left',
-    viewFactor: 0.2
-    });
-    sr.reveal("#share-head-section.p-5 ", {
-    duration: 2000,
-    distance: '300px',
-    origin: 'left',
-    viewFactor: 0.2
-    });
-    sr.reveal(".info-left ", {
-    duration: 2000,
-    distance: '300px',
-    origin: 'left',
-    viewFactor: 0.2
-    });
-    sr.reveal(".info-right", {
-    duration: 2000,
-    distance: '300px',
-    origin: 'top',
-    viewFactor: 0.2
-    });
+        window.sr = ScrollReveal();
+        sr.reveal(".navbar", {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal(".showcase-left", {
+            duration: 2000,
+            origin: 'left',
+            distance: '300px'
+        });
+        sr.reveal(".showcase-right", {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+        sr.reveal(".showcase-btn", {
+            duration: 2000,
+            delay: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal("#exist div", {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal(".section-1 ", {
+            duration: 2000,
+            distance: '300px',
+            origin: 'left',
+            viewFactor: 0.2
+        });
+        sr.reveal("#share-head-section.p-5 ", {
+            duration: 2000,
+            distance: '300px',
+            origin: 'left',
+            viewFactor: 0.2
+        });
+        sr.reveal(".info-left ", {
+            duration: 2000,
+            distance: '300px',
+            origin: 'left',
+            viewFactor: 0.2
+        });
+        sr.reveal(".info-right", {
+            duration: 2000,
+            distance: '300px',
+            origin: 'top',
+            viewFactor: 0.2
+        });
     </script>
     <script>
         $(function () {
@@ -532,4 +570,5 @@
         });
     </script>
 </body>
+
 </html>
