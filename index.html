@@ -420,6 +420,7 @@
                     </div>
                 </div>
             </div>
+            <div id="like_button_container"></div>
 
             <div id="contact">
                 <footer>
@@ -464,7 +465,7 @@
                     <h5 class="modal-title" id="contactModalTitle">Contact Us</h5>
                 </div>
                 <div class="modal-body">
-                    <form action="index.html">
+                    <form action="index.html" id="contactForm">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" required class="form-control">
@@ -501,6 +502,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="js/main.js"></script>
     <script>
         window.sr = ScrollReveal();
         sr.reveal(".navbar", {
@@ -569,6 +572,9 @@
             })
         });
     </script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    
 </body>
 
 </html>
