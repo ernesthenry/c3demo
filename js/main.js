@@ -25,6 +25,7 @@ document.getElementById('contactForm').addEventListener('submit',
    
    //save message
    saveMessage(name,email,message);
+   console.log(messagesRef)
 
    // show alert
    document.querySelector('.alert').style.display('block');
