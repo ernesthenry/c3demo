@@ -35,8 +35,10 @@ body {
     color: #00e8e8 !important;
 }
 
-.carousel-item {
-    height: 100vh;
+
+
+.carousel-item img{
+    height: 495px;
 }
 
 .carousel-caption {
@@ -190,14 +192,15 @@ body {
     min-height: 700px;
 }
 #church .jumbotron {
+    background-color: white !important;
     border-radius: 0;
     padding: 3rem 0 2rem;
     margin-bottom: 0;
-    background-image: url("images/c3ea.JPG");
+    /* /* background-image: url("images/c3ea.JPG");/
     background-attachment: fixed;
     background-size: cover;
-    min-height: 700px;
-}
+    min-height: 700px; */
+} 
 
 
 h3.heading {
@@ -357,3 +360,13 @@ hr.socket {
     transform: scale(1.1);
 }
 
+
+
+.alert{
+    text-align:center;
+    padding:10px;
+    background:#79c879;
+    color:#fff;
+    margin-botton:10px;
+    display:none;
+}
