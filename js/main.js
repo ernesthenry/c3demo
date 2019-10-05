@@ -10,46 +10,45 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-var messagesRef = firebase.database().ref('messages');  
+var messagesRef = firebase.database().ref("messages");
 
-document.getElementById('contactForm').addEventListener('submit',
- submitForm);
+document.getElementById("contactForm").addEventListener("submit", submitForm);
 
- function submitForm(e){
-   e.preventDefault();
+function submitForm(e) {
+  e.preventDefault();
+  // conso=e.log(e);
 
-   var name = getInputValue('userName');
-   var email = getInputValue('userEmail');
-   var message = getInputValue('userMessage');
+  var name = getInputValue("userName");
+  var email = getInputValue("userEmail");
+  var message = getInputValue("userMessage");
 
-   
-   //save message
-   saveMessage(name,email,message);
-   console.log(messagesRef)
+  //save message
+  saveMessage(name, email, message);
+  // console.log(messagesRef);
 
-   // show alert
-   document.querySelector('.alert').style.display('block');
+  // show alert
+  document.querySelector(".alert").style.display = "block";
 
-   // Hide alert after 3 seconds
-   setTimeout(function(){
-    document.querySelector('.alert').style.display('none')
-   }, 3000);
+  // Hide alert after 3 seconds
+  setTimeout(function() {
+    document.querySelector(".alert").style.display = "none";
+  }, 3000);
 
-   // clear fields
-   document.getElementById('#contactForm').reset();
- }
+  // clear fields
+  document.getElementById("contactForm").reset();
+}
 
 // Function to get form values
- function getInputValue(id){
-   return document.getElementById(id).value;
- }
+function getInputValue(id) {
+  return document.getElementById(id).value;
+}
 
-
- function saveMessage(name,email,message){
-   var newMessageRef = messagesRef.push()
-   newMessageRef.set({
-     name: name,
-     email: email,
-     message: message
-   });
- }
+function saveMessage(name, email, message) {
+  // var newMessageRef = messagesRef.push();//this line I think is doing nothing important
+  //this should work
+  messagesRef.set({
+    name: name,
+    email: email,
+    message: message
+  });
+}
