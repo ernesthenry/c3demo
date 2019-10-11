@@ -16,7 +16,6 @@ document.getElementById("contactForm").addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
-  // conso=e.log(e);
 
   var name = getInputValue("userName");
   var email = getInputValue("userEmail");
@@ -44,11 +43,12 @@ function getInputValue(id) {
 }
 
 function saveMessage(name, email, message) {
-  // var newMessageRef = messagesRef.push();//this line I think is doing nothing important
+  var newMessageRef = messagesRef.push();//this line I think is doing nothing important
   //this should work
-  messagesRef.set({
+  newMessagesRef.set({
     name: name,
     email: email,
     message: message
   });
 }
+
